@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JCore-ui_Example' do
+  pod 'JCore-ui', :path => '../'
+
+  target 'JCore-ui_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
