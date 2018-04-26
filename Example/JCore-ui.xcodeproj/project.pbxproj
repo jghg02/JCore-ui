@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0839D087762F9073913C9637 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0839D087762F9073913C9637 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1DF9133490557A8E0FA4803F /* Pods-JCore-ui_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore-ui_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCore-ui_Example/Pods-JCore-ui_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4EA9024EFF4307E7F8AA162E /* Pods_JCore_ui_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_ui_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JCore-ui_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JCore-ui_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +45,8 @@
 		9EEA1F99962EAF3F9A15C330 /* Pods_JCore_ui_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_ui_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A360E221FD8D97A3A2AAB9ED /* Pods-JCore-ui_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore-ui_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCore-ui_Tests/Pods-JCore-ui_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AD37E5D8B95609F76282AD20 /* Pods-JCore-ui_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore-ui_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCore-ui_Tests/Pods-JCore-ui_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB0D9893EE83FC3FEABD3F73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E45ACA2216BF3129BAC06F57 /* JCore-ui.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "JCore-ui.podspec"; path = "../JCore-ui.podspec"; sourceTree = "<group>"; };
+		DB0D9893EE83FC3FEABD3F73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E45ACA2216BF3129BAC06F57 /* JCore-ui.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "JCore-ui.podspec"; path = "../JCore-ui.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

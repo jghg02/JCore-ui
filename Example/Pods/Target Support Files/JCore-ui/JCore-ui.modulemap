@@ -1,0 +1,6 @@
+framework module JCore_ui {
+  umbrella header "JCore-ui-umbrella.h"
+
+  export *
+  module * { export * }
+}
