@@ -1,5 +1,4 @@
 import XCTest
-import JCore-ui
 
 class Tests: XCTestCase {
     
