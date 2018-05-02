@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JCore-ui'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JCore-ui.'
+  s.summary          = 'This is an UI Lib for iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                      This is an UI Lib to iOS. This description is too large than summary 
                        DESC
 
-  s.homepage         = 'https://github.com/Josue Hernandez/JCore-ui'
+  s.homepage         = 'https://github.com/jghg02/JCore-ui'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Josue Hernandez' => 'jghg.02@gmail.com' }
-  s.source           = { :git => 'https://github.com/Josue Hernandez/JCore-ui.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/jghg02/JCore-ui.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/jghg02'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
+
 
   s.source_files = 'JCore-ui/Classes/**/*'
   
