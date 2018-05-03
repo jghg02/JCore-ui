@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCore-ui'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'This is an UI Lib for iOS'
-  s.platform         = :ios, "9.0"
+  s.platform         = :ios, "10.0"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
