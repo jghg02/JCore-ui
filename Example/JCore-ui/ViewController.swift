@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JCore_ui
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showAlertMessage(_ sender: Any) {
+        print("GOLLLL");
+        
+        
+    }
 }
 

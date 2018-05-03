@@ -20,7 +20,10 @@
 		5CC31DF4C82E748AF632542D40765AFB /* Pods-JCore-ui_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB7D8FAA91DF8A394534852E155FD99 /* Pods-JCore-ui_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66841E6B6EA0E64EE705B99BDFBAAB1D /* JCore-ui-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C12BCA9444B91525CA5C8AAE350AE208 /* JCore-ui-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
-		6B4060DC209B609B005ED887 /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4060DB209B609B005ED887 /* TEST.swift */; };
+		6B4060E4209B86C7005ED887 /* JCoreBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4060E3209B86C7005ED887 /* JCoreBlurEffect.swift */; };
+		6B4060E6209B870A005ED887 /* JCoreAutolayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4060E5209B870A005ED887 /* JCoreAutolayouts.swift */; };
+		6B4060E8209B873F005ED887 /* JCoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4060E7209B873F005ED887 /* JCoreUtils.swift */; };
+		6B4060EA209B879B005ED887 /* JCoreAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4060E9209B879B005ED887 /* JCoreAlertView.swift */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
@@ -93,7 +96,11 @@
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		65C343DF7C8B2F317A9EE1A11B1903D8 /* JCore-ui.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JCore-ui.xcconfig"; sourceTree = "<group>"; };
 		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B4060DB209B609B005ED887 /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
+		6B4060E3209B86C7005ED887 /* JCoreBlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCoreBlurEffect.swift; sourceTree = "<group>"; };
+		6B4060E5209B870A005ED887 /* JCoreAutolayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCoreAutolayouts.swift; sourceTree = "<group>"; };
+		6B4060E7209B873F005ED887 /* JCoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCoreUtils.swift; sourceTree = "<group>"; };
+		6B4060E9209B879B005ED887 /* JCoreAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCoreAlertView.swift; sourceTree = "<group>"; };
+		6B4060EB209B87A8005ED887 /* JCoreAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCoreAlertView.xib; sourceTree = "<group>"; };
 		704CF8EDF15C13308C30B2D8551EFC23 /* Pods-JCore-ui_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCore-ui_Example.modulemap"; sourceTree = "<group>"; };
 		71717E0BBF96DDA173A339AE2B50925B /* Pods-JCore-ui_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCore-ui_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71DFD4E70EF51ED25A362773835A91D0 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,9 +236,37 @@
 		6B4060DA209B6074005ED887 /* LibraryComponents */ = {
 			isa = PBXGroup;
 			children = (
-				6B4060DB209B609B005ED887 /* TEST.swift */,
+				6B4060E1209B869C005ED887 /* UI */,
+				6B4060E0209B8662005ED887 /* Common */,
 			);
 			path = LibraryComponents;
+			sourceTree = "<group>";
+		};
+		6B4060E0209B8662005ED887 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B4060E3209B86C7005ED887 /* JCoreBlurEffect.swift */,
+				6B4060E5209B870A005ED887 /* JCoreAutolayouts.swift */,
+				6B4060E7209B873F005ED887 /* JCoreUtils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B4060E1209B869C005ED887 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6B4060E2209B86A3005ED887 /* Modal */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6B4060E2209B86A3005ED887 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				6B4060E9209B879B005ED887 /* JCoreAlertView.swift */,
+				6B4060EB209B87A8005ED887 /* JCoreAlertView.xib */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -531,7 +566,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DFC0A9265C9120CC68E68734A675F7 /* JCore-ui-dummy.m in Sources */,
-				6B4060DC209B609B005ED887 /* TEST.swift in Sources */,
+				6B4060E6209B870A005ED887 /* JCoreAutolayouts.swift in Sources */,
+				6B4060E4209B86C7005ED887 /* JCoreBlurEffect.swift in Sources */,
+				6B4060EA209B879B005ED887 /* JCoreAlertView.swift in Sources */,
+				6B4060E8209B873F005ED887 /* JCoreUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
