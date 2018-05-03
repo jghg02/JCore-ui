@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     @IBAction func showAlertMessage(_ sender: Any) {
         print("GOLLLL");
         
+        _ = JCoreAlertView.createJCoreAlertView("This is an Example...", message: "Other message...Other message...Other", image: nil).showInView()
+        
         
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JCoreAlertView: UIView {
+public class JCoreAlertView: UIView {
 
     var title: String?
     var message: String?

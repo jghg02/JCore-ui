@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCore-ui'
-  s.version          = '0.1.4'
+  s.version          = '0.2.0'
   s.summary          = 'This is an UI Lib for iOS'
   s.platform         = :ios, "10.0"
 

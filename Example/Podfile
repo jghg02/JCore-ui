@@ -1,3 +1,5 @@
+source 'https://github.com/jghg02/JCore-ui.git'
+
 use_frameworks!
 
 target 'JCore-ui_Example' do
@@ -6,6 +8,5 @@ target 'JCore-ui_Example' do
   target 'JCore-ui_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
 end
