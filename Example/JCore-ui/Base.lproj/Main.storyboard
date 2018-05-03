@@ -20,7 +20,20 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.85882352939999995" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkQ-J3-Un8">
+                                <rect key="frame" x="165.5" y="318" width="43" height="30"/>
+                                <state key="normal" title="Modal"/>
+                                <connections>
+                                    <action selector="showModal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t5S-Ru-TGP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pkQ-J3-Un8" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Lwm-DY-hta"/>
+                            <constraint firstItem="pkQ-J3-Un8" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="psF-rX-ozu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

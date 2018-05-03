@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JCoreModal" customModule="JCore_ui">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SE-03-Zvh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xa-YA-Sfi">
+                            <rect key="frame" x="8" y="250" width="359" height="166"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3P-h6-7Mb">
+                                    <rect key="frame" x="8" y="8" width="343" height="23"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dA-kS-dPR">
+                                    <rect key="frame" x="8" y="44" width="343" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="8g8-TY-7Nc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agD-b6-sDG">
+                                    <rect key="frame" x="8" y="112" width="343" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-Cc-vDe">
+                                            <rect key="frame" x="148" y="8" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="166" id="6Pu-YZ-6AF"/>
+                                <constraint firstAttribute="trailing" secondItem="q3P-h6-7Mb" secondAttribute="trailing" constant="8" id="AUr-LV-4Z6"/>
+                                <constraint firstItem="q3P-h6-7Mb" firstAttribute="leading" secondItem="0Xa-YA-Sfi" secondAttribute="leading" constant="8" id="B5Z-t0-zFj"/>
+                                <constraint firstItem="0dA-kS-dPR" firstAttribute="leading" secondItem="0Xa-YA-Sfi" secondAttribute="leading" constant="8" id="Kot-zY-5Qd"/>
+                                <constraint firstItem="q3P-h6-7Mb" firstAttribute="top" secondItem="0Xa-YA-Sfi" secondAttribute="top" constant="8" id="OUP-Va-5HX"/>
+                                <constraint firstItem="0dA-kS-dPR" firstAttribute="top" secondItem="q3P-h6-7Mb" secondAttribute="bottom" constant="13" id="WYR-za-m48"/>
+                                <constraint firstAttribute="trailing" secondItem="0dA-kS-dPR" secondAttribute="trailing" constant="8" id="cfM-Kd-bXx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0Xa-YA-Sfi" firstAttribute="centerX" secondItem="1SE-03-Zvh" secondAttribute="centerX" id="pNO-Jn-cAF"/>
+                        <constraint firstAttribute="trailing" secondItem="0Xa-YA-Sfi" secondAttribute="trailing" constant="8" id="r5b-h4-M95"/>
+                        <constraint firstItem="0Xa-YA-Sfi" firstAttribute="centerY" secondItem="1SE-03-Zvh" secondAttribute="centerY" id="wpL-dZ-66f"/>
+                        <constraint firstItem="0Xa-YA-Sfi" firstAttribute="leading" secondItem="1SE-03-Zvh" secondAttribute="leading" constant="8" id="zAe-rF-70i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1SE-03-Zvh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7C5-VE-ngL"/>
+                <constraint firstItem="1SE-03-Zvh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aPL-VY-eUD"/>
+                <constraint firstItem="1SE-03-Zvh" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fPg-7a-fmR"/>
+                <constraint firstItem="1SE-03-Zvh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tBW-Kd-KTA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundView" destination="1SE-03-Zvh" id="fbH-PV-1Jw"/>
+                <outlet property="cancelButton" destination="ka0-Cc-vDe" id="90v-uo-ztL"/>
+                <outlet property="contentView" destination="0Xa-YA-Sfi" id="FOf-gg-cnu"/>
+                <outlet property="messageAlert" destination="0dA-kS-dPR" id="kxp-Gv-6lM"/>
+                <outlet property="titleMessage" destination="q3P-h6-7Mb" id="c5Y-gV-z4Z"/>
+            </connections>
+            <point key="canvasLocation" x="-150.5" y="-29.5"/>
+        </view>
+    </objects>
+</document>
