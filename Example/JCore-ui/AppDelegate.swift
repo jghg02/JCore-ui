@@ -16,10 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let homeViewController = UIViewController()
+        let homeViewController = JCoreUIViewController()
         let navigationController = UINavigationController(rootViewController: homeViewController)
-        
-        homeViewController.view.backgroundColor = UIColor.white
         
         navigationController.navigationBar.isOpaque = true
         navigationController.navigationBar.isTranslucent = false
