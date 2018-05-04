@@ -22,7 +22,7 @@ public class JCoreLoaderView: UIView {
         jloaderView?.backgroundView.enableBlur(true)
         jloaderView?.blurTintColor = UIColor.black
         jloaderView?.blurTintColorIntensity = 0.5
-        jloaderView?.blurStyle = UIViewBlurStyle.darkStyle
+        jloaderView?.blurStyle = UIViewBlurStyle.extraLightStyle
         
         
         let rotacion = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -93,7 +93,6 @@ public class JCoreLoaderView: UIView {
     }
     
     //MARK: - Cancel Action
-    
     @IBAction func cancelOnClick(_ sender: AnyObject) {
         self.removeLoader()
     }

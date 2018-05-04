@@ -39,8 +39,21 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-e9-2z1">
                     <rect key="frame" x="8" y="592" width="359" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN0-h2-vZ2">
+                            <rect key="frame" x="8" y="0.0" width="343" height="50"/>
+                            <state key="normal" title="Cancelar"/>
+                            <connections>
+                                <action selector="cancelOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1jx-8D-8s1"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EN0-h2-vZ2" secondAttribute="bottom" id="7X8-d6-cgh"/>
+                        <constraint firstAttribute="trailing" secondItem="EN0-h2-vZ2" secondAttribute="trailing" constant="8" id="BCe-96-IrO"/>
+                        <constraint firstItem="EN0-h2-vZ2" firstAttribute="leading" secondItem="0zm-e9-2z1" secondAttribute="leading" constant="8" id="hmY-bR-2qb"/>
+                        <constraint firstItem="EN0-h2-vZ2" firstAttribute="top" secondItem="0zm-e9-2z1" secondAttribute="top" id="kzc-SY-hbW"/>
                         <constraint firstAttribute="height" constant="50" id="yUv-C7-TPg"/>
                     </constraints>
                 </view>
