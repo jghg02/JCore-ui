@@ -19,8 +19,39 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.85882352939999995" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-QC-GXy">
+                    <rect key="frame" x="16" y="20" width="343" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="7R7-3i-xrp"/>
+                    </constraints>
+                    <state key="normal" title="Alert"/>
+                    <connections>
+                        <action selector="showAlertView:" destination="-1" eventType="touchUpInside" id="nCc-zg-WRx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-SH-2Hf">
+                    <rect key="frame" x="16" y="73" width="343" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="uWL-d3-glF"/>
+                    </constraints>
+                    <state key="normal" title="Loading"/>
+                    <connections>
+                        <action selector="showLoading:" destination="-1" eventType="touchUpInside" id="iDH-Lz-a5o"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9DT-QC-GXy" secondAttribute="trailing" constant="16" id="3tr-v9-y4g"/>
+                <constraint firstItem="9DT-QC-GXy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4TA-8R-k90"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HGR-SH-2Hf" secondAttribute="trailing" constant="16" id="Kxw-Wr-DrI"/>
+                <constraint firstItem="9DT-QC-GXy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="POU-pl-gOm"/>
+                <constraint firstItem="HGR-SH-2Hf" firstAttribute="top" secondItem="9DT-QC-GXy" secondAttribute="bottom" constant="8" id="ZXn-So-DTv"/>
+                <constraint firstItem="HGR-SH-2Hf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="okr-i3-eBq"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-102.5" y="-73.5"/>
         </view>
     </objects>
 </document>

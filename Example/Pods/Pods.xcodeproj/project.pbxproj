@@ -14,6 +14,13 @@
 		491D3920E9328056CA763F31C29D3E54 /* JCoreAutolayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2229731E364E17FC2D6F8A46BE2E56 /* JCoreAutolayouts.swift */; };
 		61256B7D945492ACF63648962AFE657C /* JCoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD57673AD2002DE0A1F92E248A4EEAB /* JCoreUtils.swift */; };
 		65A5C53B0EA51373AC53470DCDFC683F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6B457706209CA69300DE3E9C /* JCoreLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B457705209CA69300DE3E9C /* JCoreLoaderView.swift */; };
+		6B45770B209CA96F00DE3E9C /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B457709209CA96F00DE3E9C /* UIView+Blur.m */; };
+		6B45770C209CA96F00DE3E9C /* UIView+Blur.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B45770A209CA96F00DE3E9C /* UIView+Blur.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B457710209CAF4D00DE3E9C /* JCoreLoaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6B457707209CA6A000DE3E9C /* JCoreLoaderView.xib */; };
+		6B457715209CB4C900DE3E9C /* load.png in Sources */ = {isa = PBXBuildFile; fileRef = 6B457713209CB49400DE3E9C /* load.png */; };
+		6B457716209CB4CC00DE3E9C /* load@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 6B457712209CB49400DE3E9C /* load@2x.png */; };
+		6B457717209CB4CF00DE3E9C /* load@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 6B457714209CB49400DE3E9C /* load@3x.png */; };
 		806FA30CF1960E6ECF6CE347F376CDCC /* JCoreAlertView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1B49D682AED34C218A0C12523EF9B2B3 /* JCoreAlertView.xib */; };
 		8785D6573B04281B32A8DE02D29620FD /* Pods-JCore-ui_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAD917AEDE8F73AAEE28AEC5D029EBC /* Pods-JCore-ui_Tests-dummy.m */; };
 		972251CCA99BC6BAA568E0F13D1DF0E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -59,6 +66,13 @@
 		5042EFEF1B15165353218FFDA2C9A0DC /* JCoreBlurEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JCoreBlurEffect.swift; sourceTree = "<group>"; };
 		646D727C4BA2B73114F71C72A57FE586 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B457705209CA69300DE3E9C /* JCoreLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCoreLoaderView.swift; sourceTree = "<group>"; };
+		6B457707209CA6A000DE3E9C /* JCoreLoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCoreLoaderView.xib; sourceTree = "<group>"; };
+		6B457709209CA96F00DE3E9C /* UIView+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Blur.m"; sourceTree = "<group>"; };
+		6B45770A209CA96F00DE3E9C /* UIView+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Blur.h"; sourceTree = "<group>"; };
+		6B457712209CB49400DE3E9C /* load@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "load@2x.png"; sourceTree = "<group>"; };
+		6B457713209CB49400DE3E9C /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
+		6B457714209CB49400DE3E9C /* load@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "load@3x.png"; sourceTree = "<group>"; };
 		704CF8EDF15C13308C30B2D8551EFC23 /* Pods-JCore-ui_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCore-ui_Example.modulemap"; sourceTree = "<group>"; };
 		71717E0BBF96DDA173A339AE2B50925B /* Pods-JCore-ui_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCore-ui_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7317AD95900A60A8AC56BDAA9DA5D398 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +127,7 @@
 		12335BA8482CF91382864069FDA261B5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6B457704209CA66C00DE3E9C /* Loader */,
 				1ED33B7B7E574E7B4AF72452F726203B /* Modal */,
 			);
 			name = UI;
@@ -140,6 +155,7 @@
 		21A5738576728363A9FAECD57748624F /* JCore-ui */ = {
 			isa = PBXGroup;
 			children = (
+				6B457711209CB47B00DE3E9C /* Assets */,
 				554FAA5DD317F49FA50C19750955984B /* Common */,
 				FE9FD7DDFEA2B9E0FE60A61A2A591100 /* Pod */,
 				7AD9F5CE3D9995BF4BF0826C11BA4348 /* Support Files */,
@@ -152,12 +168,41 @@
 		554FAA5DD317F49FA50C19750955984B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6B457708209CA94B00DE3E9C /* BlurEffect */,
 				DD2229731E364E17FC2D6F8A46BE2E56 /* JCoreAutolayouts.swift */,
-				5042EFEF1B15165353218FFDA2C9A0DC /* JCoreBlurEffect.swift */,
 				9FD57673AD2002DE0A1F92E248A4EEAB /* JCoreUtils.swift */,
 			);
 			name = Common;
 			path = LibraryComponents/Common;
+			sourceTree = "<group>";
+		};
+		6B457704209CA66C00DE3E9C /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				6B457705209CA69300DE3E9C /* JCoreLoaderView.swift */,
+				6B457707209CA6A000DE3E9C /* JCoreLoaderView.xib */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		6B457708209CA94B00DE3E9C /* BlurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				6B45770A209CA96F00DE3E9C /* UIView+Blur.h */,
+				6B457709209CA96F00DE3E9C /* UIView+Blur.m */,
+				5042EFEF1B15165353218FFDA2C9A0DC /* JCoreBlurEffect.swift */,
+			);
+			path = BlurEffect;
+			sourceTree = "<group>";
+		};
+		6B457711209CB47B00DE3E9C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6B457713209CB49400DE3E9C /* load.png */,
+				6B457712209CB49400DE3E9C /* load@2x.png */,
+				6B457714209CB49400DE3E9C /* load@3x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		7AD9F5CE3D9995BF4BF0826C11BA4348 /* Support Files */ = {
@@ -288,6 +333,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B45770C209CA96F00DE3E9C /* UIView+Blur.h in Headers */,
 				EA7067193577AAD531E4859A1E1AD175 /* JCore-ui-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,12 +435,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC57293DE23973956A5423EAFC40D383 /* JCore-ui-dummy.m in Sources */,
-				418A45387509FC5E4E900C8916162D76 /* JCoreAlertView.swift in Sources */,
+				6B457716209CB4CC00DE3E9C /* load@2x.png in Sources */,
+				6B457717209CB4CF00DE3E9C /* load@3x.png in Sources */,
+				6B457715209CB4C900DE3E9C /* load.png in Sources */,
+				6B457710209CAF4D00DE3E9C /* JCoreLoaderView.xib in Sources */,
 				806FA30CF1960E6ECF6CE347F376CDCC /* JCoreAlertView.xib in Sources */,
+				AC57293DE23973956A5423EAFC40D383 /* JCore-ui-dummy.m in Sources */,
+				6B45770B209CA96F00DE3E9C /* UIView+Blur.m in Sources */,
+				418A45387509FC5E4E900C8916162D76 /* JCoreAlertView.swift in Sources */,
 				491D3920E9328056CA763F31C29D3E54 /* JCoreAutolayouts.swift in Sources */,
 				E9BE74104C8EED98E69DD00418B112F7 /* JCoreBlurEffect.swift in Sources */,
 				61256B7D945492ACF63648962AFE657C /* JCoreUtils.swift in Sources */,
+				6B457706209CA69300DE3E9C /* JCoreLoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

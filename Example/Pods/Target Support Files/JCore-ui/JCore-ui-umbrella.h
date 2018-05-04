@@ -14,3 +14,5 @@
 FOUNDATION_EXPORT double JCore_uiVersionNumber;
 FOUNDATION_EXPORT const unsigned char JCore_uiVersionString[];
 
+
+#import "UIView+Blur.h"

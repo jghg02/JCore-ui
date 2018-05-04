@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import JCore_ui
 
 class JCoreUIViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "JCoreUI"
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +23,14 @@ class JCoreUIViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func showAlertView(_ sender: Any) {
+        let image: UIImage? = JCoreBlurEffect.takeSnapOfView(view: (UIApplication.shared.keyWindow?.subviews.first)!)
+        _ = JCoreAlertView.createJCoreAlertView("This is an Example...", message: "Other message...Other message...Otherjskdhskdhskdhskdhsk XXXXX 4000", image: image).showInView()
     }
-    */
-
+    
+    @IBAction func showLoading(_ sender: Any) {
+        let image: UIImage? = JCoreBlurEffect.takeSnapOfView(view: (UIApplication.shared.keyWindow?.subviews.first)!)
+        _ = JCoreLoaderView.createJloader(self.view, hideNavitagionBar: true, cancellable: true, withBlur: true, image: image)
+    }
+    
 }
