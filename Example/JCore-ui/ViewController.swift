@@ -22,10 +22,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlertMessage(_ sender: Any) {
-        print("GOLLLL");
         
-        _ = JCoreAlertView.createJCoreAlertView("This is an Example...", message: "Other message...Other message...Other", image: nil).showInView()
-        
+        let image: UIImage? = JCoreBlurEffect.takeSnapOfView(view: (UIApplication.shared.keyWindow?.subviews.first)!)
+        _ = JCoreAlertView.createJCoreAlertView("This is an Example...", message: "Other message...Other message...Otherjskdhskdhskdhskdhsk XXXXX 4000", image: image).showInView()
         
     }
 }

@@ -46,14 +46,9 @@ public class JCoreAlertView: UIView {
         view.title = title
         view.message = message
         
-        _ = JCoreAutolayouts.fillContainer(UIApplication.shared.keyWindow!.subviews.first!, view: view)
+        view.contentView.backgroundColor = UIColor.white;
         
-        /*
-         view.backgroundView.enableBlur(true)
-         view.backgroundView.blurTintColor = UIColor.black
-         view.backgroundView.blurTintColorIntensity = 0.5
-         view.backgroundView.blurStyle = UIViewBlurStyle.darkStyle
-         */
+        _ = JCoreAutolayouts.fillContainer(UIApplication.shared.keyWindow!.subviews.first!, view: view)
         
         let backImg: UIImageView? = UIImageView(image: image)
         _ = JCoreAutolayouts.fillContainer(view.backgroundView, view: backImg!)
@@ -63,18 +58,16 @@ public class JCoreAlertView: UIView {
         
         view.contentView.layer.cornerRadius = 4.5
         view.contentView.layer.masksToBounds = true
-        
+
         return view.showInView()
-        
     }
     
     open func showInView() -> JCoreAlertView {
         
-        self.titleMessage.numberOfLines = 1
         self.titleMessage.text = self.title
         self.titleMessage.sizeToFit()
         
-        self.messageAlert.numberOfLines = 1
+        self.messageAlert.numberOfLines = 0
         self.messageAlert.text = self.message
         self.messageAlert.sizeToFit()
         
@@ -107,8 +100,7 @@ public class JCoreAlertView: UIView {
             
         }
     }
-    
-    
+        
     //MARK: - Action's Buttons
     @IBAction func cancelOnClick(_ sender: AnyObject) {
         self.removeFromView()

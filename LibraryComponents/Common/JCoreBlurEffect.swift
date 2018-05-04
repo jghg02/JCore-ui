@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JCoreBlurEffect: NSObject {
+public class JCoreBlurEffect: NSObject {
     
     public class func blurEffect(view: UIView!) -> Void {
         
