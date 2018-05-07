@@ -1,5 +1,6 @@
 # Crear un POD 
 
+
 Lo primero que debemos hacer es installar `cocoapods`
 
 	sudo gem install cocoapods
