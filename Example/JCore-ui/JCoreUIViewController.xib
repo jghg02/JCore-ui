@@ -40,7 +40,7 @@
                         <action selector="showLoading:" destination="-1" eventType="touchUpInside" id="iDH-Lz-a5o"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-Od-v0Q">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-Od-v0Q" customClass="JCButton" customModule="JCore_ui">
                     <rect key="frame" x="164.5" y="143" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>

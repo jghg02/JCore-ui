@@ -1,6 +1,0 @@
-framework module Pods_JCore_ui_Tests {
-  umbrella header "Pods-JCore-ui_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
