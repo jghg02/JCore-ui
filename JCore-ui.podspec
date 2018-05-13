@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCore-ui'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'This is an UI Lib for iOS'
   s.platform         = :ios, "10.0"
 
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LibraryComponents/**/*'
   
-  s.resources = 'LibraryComponents/Resources/**/*'
+  s.resources = 'LibraryComponents/Resources/*.xcassets/*'
 
  # s.resource_bundles = {
  #   'JCore-ui' => ['LibraryComponents/Resources/**/*']
