@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 # s.resources = 'LibraryComponents/Resources/*.xcassets'
 
   s.resource_bundles = {
-    'JCore-ui' => ['LibraryComponents/Resources/*.xcassets','LibraryComponents/Resources/*.xcassets/*.json']
+    'JCore-ui' => ['LibraryComponents/Resources/*.xcassets','LibraryComponents/Resources/**/*.json']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
