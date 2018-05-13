@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +22,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geL-qH-Uva">
                     <rect key="frame" x="107" y="253" width="160" height="160"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load.png" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-qK-MIF">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-qK-MIF">
                             <rect key="frame" x="63" y="63" width="35" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="o2A-Fe-lUM"/>
@@ -80,7 +81,4 @@
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="load.png" width="35" height="35"/>
-    </resources>
 </document>
