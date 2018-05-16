@@ -1,0 +1,18 @@
+PODS:
+  - JCore-ui (0.3.1):
+    - JCore-ui/JCButton (= 0.3.1)
+  - JCore-ui/JCButton (0.3.1)
+
+DEPENDENCIES:
+  - JCore-ui (from `../`)
+
+EXTERNAL SOURCES:
+  JCore-ui:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JCore-ui: 5436d7137b2e9d9997a04f46bd4564926c0d90fc
+
+PODFILE CHECKSUM: 54016283ddc823ff9bd7ce46cac8607d18bec579
+
+COCOAPODS: 1.4.0
