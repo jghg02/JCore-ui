@@ -25,7 +25,7 @@ public class JCoreLoaderView: UIView {
         jloaderView?.blurStyle = UIViewBlurStyle.extraLightStyle
         
         //Set image into xib
-        jloaderView?.iconLogo.image = UIImage(named: "JCoreLoading", in: JCoreUtils.frameworkBundle(), compatibleWith: nil)
+        jloaderView?.iconLogo.image = UIImage(named: "Loading", in: JCoreUtils.frameworkBundle(), compatibleWith: nil)
         
         let rotacion = CABasicAnimation(keyPath: "transform.rotation.z")
         rotacion.toValue = CGFloat(.pi * 2.0)
