@@ -1,7 +1,5 @@
 PODS:
-  - JCore-ui (0.3.5):
-    - JCore-ui/JCButton (= 0.3.5)
-  - JCore-ui/JCButton (0.3.5)
+  - JCore-ui (0.4.0)
 
 DEPENDENCIES:
   - JCore-ui (from `../`)
@@ -11,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JCore-ui: b2806bd97a2b164716d8f2bd334411ca8601e50c
+  JCore-ui: f1693d79d6aeb8fd1a9e8dec71c88c3136532bd1
 
 PODFILE CHECKSUM: 54016283ddc823ff9bd7ce46cac8607d18bec579
 
