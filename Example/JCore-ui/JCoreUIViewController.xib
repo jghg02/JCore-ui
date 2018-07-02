@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-lS-p9t">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-P7-urq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -39,6 +39,10 @@
                                     <connections>
                                         <action selector="showLoading:" destination="-1" eventType="touchUpInside" id="f9c-nE-s7C"/>
                                     </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFZ-CF-w1N" customClass="JCButton" customModule="JCore_ui">
+                                    <rect key="frame" x="0.0" y="60" width="375" height="30"/>
+                                    <state key="normal" title="Button"/>
                                 </button>
                             </subviews>
                             <constraints>

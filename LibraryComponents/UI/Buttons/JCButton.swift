@@ -10,12 +10,13 @@ import UIKit
 @IBDesignable
 public class JCButton: UIButton {
 
-    @IBInspectable var fillColor: UIColor = UIColor.blue
+    @IBInspectable var fillColor: UIColor = UIColor.orange
     @IBInspectable var cornerRadius: CGFloat = 0
     
     override public func draw(_ rect: CGRect) {
         layer.cornerRadius = cornerRadius
         layer.backgroundColor = fillColor.cgColor
+
     }
 
 }
