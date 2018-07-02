@@ -25,7 +25,7 @@ class JCoreUIViewController: UIViewController {
 
     @IBAction func showAlertView(_ sender: Any) {
         let image: UIImage? = JCoreBlurEffect.takeSnapOfView(view: (UIApplication.shared.keyWindow?.subviews.first)!)
-        _ = JCoreAlertView.createJCoreAlertView("This is an Example...", message: "Other message...Other message...Otherjskdhskdhskdhskdhsk XXXXX 4000", image: image).showInView()
+        _ = JCoreAlertView.createJCoreAlertView("This is the Title.....fjasfhjshfjahfjhfjahfjhfjdhfjdhj", message: "This is a message to show in this modal.................", image: image).showInView()
     }
     
     @IBAction func showLoading(_ sender: Any) {
