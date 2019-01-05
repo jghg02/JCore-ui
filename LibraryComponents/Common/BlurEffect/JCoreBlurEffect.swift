@@ -9,7 +9,7 @@ import UIKit
 
 public class JCoreBlurEffect: NSObject {
     
-    public class func blurEffect(view: UIView!) -> Void {
+    @objc public class func blurEffect(view: UIView!) -> Void {
         
         //only apply the blur if the user hasn't disabled transparency effects
         if !UIAccessibilityIsReduceTransparencyEnabled() {
@@ -27,7 +27,7 @@ public class JCoreBlurEffect: NSObject {
         }
     }
     
-    public class func takeSnapOfView(view: UIView) -> UIImage! {
+    @objc public class func takeSnapOfView(view: UIView) -> UIImage! {
         
         UIGraphicsBeginImageContext(CGSize(width: view.frame.size.width, height: view.frame.size.height))
         

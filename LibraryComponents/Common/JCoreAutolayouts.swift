@@ -33,7 +33,7 @@ import UIKit
     open var verticalCenter: NSLayoutConstraint!
 }
 
-class JCoreAutolayouts: NSObject {
+@objc class JCoreAutolayouts: NSObject {
     
     open class func addView(
         _ view : UIView,

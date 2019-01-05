@@ -81,6 +81,54 @@ Para solucionar esto se debe especificar al version de `swift` con la que se va 
 
 
 
+## Para el caso de agregar los .xib y .xcassestes 
+
+Se agrega esta linea dentro del podspect de nuestra lib. 
+
+	s.ios.resources    = "LibraryComponents/Classes/**/*.xib"
+	
+Al hacerlo ejecutamos un `pod install` y posterior a esto se debe crear dentro de la Lib el Folder **Resources**
+
+
+
+## Exampel .podspect MeLi
+
+	Pod::Spec.new do |s|
+	  s.name             = 'MLQuote'
+	  s.version          = '0.1.0'
+	  s.summary          = 'MLQuote library for ios app.'
+	
+	  s.description      = <<-DESC
+	Library for Classifieds Quotes (`Pedir Presupuesto`)
+	                       DESC
+	
+	  s.homepage         = 'https://github.com/mercadolibre/fury_classifieds-quote-ios'
+	  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+	  s.author           = { 'Classifieds Mobile Team' => 'it_classifieds@mercadolibre.com' }
+	  s.source           = { :git => 'git@github.com:mercadolibre/fury_classifieds-quote-ios.git', :tag => s.version.to_s }
+	
+	  s.platform         = :ios, '10.0'
+	  s.swift_version = '4.1'
+	  
+	  s.requires_arc     = true
+	  s.static_framework = true
+	
+	  # s.public_header_files = 'LibraryComponents/Classes/**/*.h'
+	  s.source_files = "LibraryComponents/Classes/**/*.{swift,h,m}"
+	
+	  # s.ios.resources    = "LibraryComponents/Assets/**/*.xcassets", "LibraryComponents/Classes/**/*.xib"
+	  # s.resources     = "LibraryComponents/Classes/**/*.xib', 'LibraryComponents/Resources/**/*.xcassets"
+	
+	  s.ios.resources    = "LibraryComponents/Classes/**/*.xib"
+	  # s.ios.resource_bundle = {
+	  # 'MLQQTResources' => ['LibraryComponents/Classes/**/*.xib']
+	  # 'MLQTQuoteStrings' => ['LibraryComponents/Assets/**/*.lproj']
+	  # }
+	
+	  s.dependency 'MeliSDK'
+	  s.frameworks = 'UIKit'
+	end
+
 
 
 # NEW
