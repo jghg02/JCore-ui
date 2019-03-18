@@ -61,12 +61,6 @@ public class JCoreLoaderView: UIView {
         )
         
         if withBlur {
-            /*
-             jloaderView?.backgroundView.enableBlur(true)
-             jloaderView?.backgroundView.blurTintColor = UIColor.black
-             jloaderView?.backgroundView.blurTintColorIntensity = 0.5
-             jloaderView?.backgroundView.blurStyle = UIViewBlurStyle.darkStyle
-             */
             let backImg: UIImageView? = UIImageView(image: image)
             _ = JCoreAutolayouts.fillContainer((jloaderView?.backgroundView)!, view: backImg!)
             jloaderView?.backgroundView.addSubview(backImg!)
