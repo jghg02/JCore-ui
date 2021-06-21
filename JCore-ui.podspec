@@ -40,6 +40,8 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'JCore-ui' => ['LibraryComponents/Resources/*.{xcassets,png,json}']
   }
+  
+  s.pod_target_xcconfig = `xcodebuild -version` =~ /Xcode 12./ ? { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' } : { }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
