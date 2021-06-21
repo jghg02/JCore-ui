@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCore-ui'
-  s.version          = '0.4.2'
+  s.version          = '0.4.3'
   s.summary          = 'This is an UI Lib for iOS'
   s.platform         = :ios, "10.0"
 
@@ -41,7 +41,8 @@ Pod::Spec.new do |s|
     'JCore-ui' => ['LibraryComponents/Resources/*.{xcassets,png,json}']
   }
   
-  s.pod_target_xcconfig = `xcodebuild -version` =~ /Xcode 12./ ? { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' } : { }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
