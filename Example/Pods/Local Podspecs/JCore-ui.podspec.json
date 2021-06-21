@@ -1,9 +1,9 @@
 {
   "name": "JCore-ui",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "summary": "This is an UI Lib for iOS",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "description": "This is an UI Lib to iOS. This description is too large than summary",
   "homepage": "https://github.com/jghg02/JCore-ui",
@@ -16,14 +16,15 @@
   },
   "source": {
     "git": "https://github.com/jghg02/JCore-ui.git",
-    "tag": "0.4.0"
+    "tag": "0.4.1"
   },
   "social_media_url": "https://twitter.com/jghg02",
-  "swift_version": "4.0",
+  "swift_versions": "4.0",
   "source_files": "LibraryComponents/**/*",
   "resource_bundles": {
     "JCore-ui": [
       "LibraryComponents/Resources/*.{xcassets,png,json}"
     ]
-  }
+  },
+  "swift_version": "4.0"
 }

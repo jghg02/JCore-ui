@@ -30,7 +30,7 @@ class JCoreUIViewController: UIViewController {
     
     @IBAction func showLoading(_ sender: Any) {
         let image: UIImage? = JCoreBlurEffect.takeSnapOfView(view: (UIApplication.shared.keyWindow?.subviews.first)!)
-        _ = JCoreLoaderView.createJloader(self.view, hideNavitagionBar: true, cancellable: true, withBlur: true, image: image)
+        _ = JCoreLoaderView.createJloader(self.view, hideNavitagionBar: true, cancellable: false, withBlur: true, image: image)
     }
     
 }

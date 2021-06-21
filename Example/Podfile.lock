@@ -1,16 +1,16 @@
 PODS:
-  - JCore-ui (0.4.0)
+  - JCore-ui (0.4.1)
 
 DEPENDENCIES:
   - JCore-ui (from `../`)
 
 EXTERNAL SOURCES:
   JCore-ui:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  JCore-ui: f1693d79d6aeb8fd1a9e8dec71c88c3136532bd1
+  JCore-ui: 879986e9c88cd0bc7aeaf473902383af14ce7cce
 
 PODFILE CHECKSUM: 54016283ddc823ff9bd7ce46cac8607d18bec579
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.10.0
