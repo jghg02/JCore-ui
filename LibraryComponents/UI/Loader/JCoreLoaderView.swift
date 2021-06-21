@@ -49,6 +49,8 @@ public class JCoreLoaderView: UIView {
         
         if cancellable {
             jloaderView?.cancelView.isHidden = false
+        } else {
+            jloaderView?.cancelView.isHidden = true
         }
         
         jloaderView?.alpha = 0
