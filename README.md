@@ -1,7 +1,8 @@
 # JCore-ui
 
 
-[![CI Status](https://img.shields.io/travis/Josue Hernandez/JCore-ui.svg?style=flat)](https://travis-ci.org/Josue Hernandez/JCore-ui)
+[![CI Status](https://img.shields.io/travis/Josue\Hernandez/JCore-ui.svg?style=flat)](https://travis-ci.org/Josue\Hernandez/JCore-ui)
+
 [![Version](https://img.shields.io/cocoapods/v/JCore-ui.svg?style=flat)](https://cocoapods.org/pods/JCore-ui)
 [![License](https://img.shields.io/cocoapods/l/JCore-ui.svg?style=flat)](https://cocoapods.org/pods/JCore-ui)
 [![Platform](https://img.shields.io/cocoapods/p/JCore-ui.svg?style=flat)](https://cocoapods.org/pods/JCore-ui)
